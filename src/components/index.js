@@ -6,7 +6,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   particlesCanvas: {
-    position: "absolute"
+    position: "absolute",
+    opacity: 0.15
   }
 });
 
@@ -22,33 +23,37 @@ const Home = () => {
         params={{
           particles: {
             number: {
-              value: 100,
+              value: 120,
               density: {
-                enable: false
+                enable: true,
+                value_area: 900
+              }
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 1,
+                color: "tomato"
               }
             },
             size: {
-              value: 10,
-              random: true
-            },
-            move: {
-              direction: "bottom",
-              out_mode: "out"
-            },
-            line_linked: {
-              enable: false
-            }
-          },
-          interactivity: {
-            events: {
-              onclick: {
+              value: 8,
+              random: true,
+              anim: {
                 enable: true,
-                mode: "remove"
+                speed: 6,
+                size_min: 0.1,
+                sync: true
               }
             },
-            modes: {
-              remove: {
-                particles_nb: 10
+            opacity: {
+              value: 1,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: true
               }
             }
           }

@@ -34,8 +34,8 @@ const useStyles = makeStyles(theme => ({
   avatar: {
     display: "block",
     margin: "0.5rem auto",
-    width: theme.spacing(13),
-    heigth: theme.spacing(13)
+    width: theme.spacing(5),
+    heigth: theme.spacing(6)
   },
   listItem: {
     color: "tan"

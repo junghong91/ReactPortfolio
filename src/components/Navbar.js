@@ -15,6 +15,7 @@ import {
   Typography,
   Box
 } from "@material-ui/core";
+import Footer from "./Footer";
 
 import {
   ArrowBack,
@@ -116,6 +117,7 @@ const Navbar = () => {
               onClose={toggleSlider("right", false)}
             >
               {sideList("right")}
+              <Footer />
             </MobilRightMenuSlider>
           </Toolbar>
         </AppBar>
